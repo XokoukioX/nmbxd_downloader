@@ -32,7 +32,7 @@ def download_thread(thread_id, po_only):
     else:
         url_template = base_url + 'thread?id={}&page={}'
 
-    cookies = {'userhash': '%EDj%92%90%A9o%FCH%D8%97y%DC-4%90%D8%400%0C%AE%14f%1A%D8'}  # 用你实际的用户哈希值替换
+    cookies = {'userhash': ''}  # 用你实际的用户哈希值替换
 
     try:
         response = requests.get(url_template.format(thread_id, 1), cookies=cookies)
